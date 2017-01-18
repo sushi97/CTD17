@@ -12,78 +12,98 @@
     <!--Import stylesheet-->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-    <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('images/background1.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("images/background2.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("images/background3.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
     }
-}
+    
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    /* Create a Parallax Effect */
+    
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* First image (Logo. Full height) */
+    
+    .bgimg-1 {
+        background-image: url('images/background1.jpg');
+        min-height: 100%;
+    }
+    /* Second image (Portfolio) */
+    
+    .bgimg-2 {
+        background-image: url("images/background2.jpg");
+        min-height: 400px;
+    }
+    /* Third image (Contact) */
+    
+    .bgimg-3 {
+        background-image: url("images/background3.jpg");
+        min-height: 400px;
+    }
+    
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
 </style>
 
 <body>
     <!---------------------Nav bar------------------>
     <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li><a href="#!">three</a></li>
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li><a href="#!">three</a></li>
     </ul>
     <div class="navbar-fixed">
-    <nav class="z-depth-4 ">
+        <nav class="z-depth-4 ">
             <div class="nav-wrapper grey darken-1">
-                <a href="#" class="brand-logo center">CTD</a> 
-                <ul  class="right hide-on-med-and-down">
+                <a href="#" class="brand-logo center">CTD</a>
+                <ul class="right hide-on-med-and-down">
                     <li><a class="waves-effect  waves-light " class="dropdown-button" href="#!" data-activates="dropdown1"><i class="large material-icons right">toc</i></a></li>
                 </ul>
             </div>
-        </nav></div>
+        </nav>
+    </div>
     <!----------------------->
     <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+        </div>
+    </div>
     <!------------------------------------------parallax code------------------->
-    
-    
-    
+
+
+
     <div class="section white z-depth-1">
         <div class="row">
             <div class="col s12">
@@ -92,7 +112,7 @@ body, html {
             </div>
         </div>
     </div>
-    
+
     <!----------->
     <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
@@ -100,7 +120,7 @@ body, html {
   </div>
 </div>
     <!------------------>
-    
+
     <div class="section white z-depth-1">
         <div class="row">
             <div class="col s12">
@@ -109,14 +129,14 @@ body, html {
             </div>
         </div>
     </div>
-   <!---------------->
+    <!---------------->
     <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+        </div>
+    </div>
     <!--------------->
-    
+
     <div class="section white z-depth-1">
         <div class="row">
             <div class="col s12">
@@ -127,9 +147,9 @@ body, html {
     </div>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
