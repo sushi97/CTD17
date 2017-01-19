@@ -1,8 +1,13 @@
 (function ($) {
     $(function () {
 
-        $('.button-collapse').sideNav();
-        $('.parallax').parallax();
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.dropdown-button').dropdown({
+                constrain_width: false,
+                belowOrigin: true,
+            });
+        });
 
     }); // end of document ready
     $('.dropdown-button').dropdown();

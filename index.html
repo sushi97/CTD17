@@ -15,70 +15,91 @@
 
 <body>
 
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li><a href="#!">three</a></li>
-    </ul>
     <div class="navbar-fixed">
-        <nav class="z-depth-4 ">
-            <div class="nav-wrapper grey darken-1">
-                <a href="#" class="brand-logo center">CTD</a>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">CTD17</a>
+                <a href="#" data-activates="mobile-module" class="button-collapse dropdown-button right"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="waves-effect  waves-light " class="dropdown-button" href="#!" data-activates="dropdown1"><i class="large material-icons right">toc</i></a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#sigs">SIGs</a></li>
+                    <li><a href="#about">About Us</a></li>
                 </ul>
+                <ul class="dropdown-content" id="mobile-module">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#sigs">SIGs</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+
             </div>
         </nav>
     </div>
 
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="images/background1.jpg">
+    <div id="home">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/background1.jpg">
+            </div>
         </div>
-    </div>
 
-    <div class="section white z-depth-1">
-        <div class="row">
-            <div class="col s12">
-                <h3>CTD</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="section white z-depth-1">
+            <div class="row">
+                <div class="col s12">
+                    <h3>CTD</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    </div>
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="images/background2.jpg">
-        </div>
-    </div>
 
-    <div class="section white z-depth-1">
-        <div class="row">
-            <div class="col s12">
-                <h3>Events</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div id="events">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/background2.jpg">
+            </div>
+        </div>
+
+        <div class="section white z-depth-1">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Events</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="images/background3.jpg">
+
+    <div id="sigs">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/background3.jpg">
+            </div>
+        </div>
+
+        <div class="section white z-depth-1">
+            <div class="row">
+                <div class="col s12">
+                    <h3>SIG</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="section white z-depth-1">
-        <div class="row">
-            <div class="col s12">
-                <h3>SIG</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
+
+
+
+    <div id="about">
+
     </div>
 
     <!--Import jQuery before materialize.js-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/script.js"></script>
 </body>
