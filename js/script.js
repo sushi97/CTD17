@@ -8,11 +8,8 @@
                 belowOrigin: true,
             });
             $('.scrollspy').scrollSpy();
-<<<<<<< HEAD
             $('.carousel').carousel();
-             
-=======
->>>>>>> refs/remotes/origin/master
+
         });
 
     }); // end of document ready

@@ -1,15 +1,11 @@
-
 #nav-but {
     width: 64px;
 }
-<<<<<<< HEAD
 
-.ram{
-    
-    background-color:darkgreen;
-   
+.ram {
+    background-color: darkgreen;
 }
+
 .carousel .carousel-item {
-width:300px !important;}
-=======
->>>>>>> refs/remotes/origin/master
+    width: 300px !important;
+}
