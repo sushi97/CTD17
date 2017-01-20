@@ -1,12 +1,16 @@
 (function ($) {
     $(function () {
 
-<<<<<<< HEAD
-
-=======
-        $('.button-collapse').sideNav();
->>>>>>> refs/remotes/origin/parallax-template
-        $('.parallax').parallax();
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.dropdown-button').dropdown({
+                constrain_width: false,
+                belowOrigin: true,
+            });
+            $('.scrollspy').scrollSpy();
+            $('.carousel').carousel();
+             
+        });
 
     }); // end of document ready
     $('.dropdown-button').dropdown();
