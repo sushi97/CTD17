@@ -8,10 +8,12 @@
                 belowOrigin: true,
             });
             $('.scrollspy').scrollSpy();
+<<<<<<< HEAD
             $('.carousel').carousel();
              
+=======
+>>>>>>> refs/remotes/origin/master
         });
 
     }); // end of document ready
-    $('.dropdown-button').dropdown();
 })(jQuery); // end of jQuery name space
