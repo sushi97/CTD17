@@ -8,8 +8,12 @@
                 belowOrigin: true,
             });
             $('.scrollspy').scrollSpy();
-            $('.carousel').carousel();
-             
+            $('.carousel').carousel({
+                
+                indicators:true
+            });
+          
+           
         });
 
     }); // end of document ready
