@@ -10,8 +10,11 @@
             $('.scrollspy').scrollSpy();
             $('.carousel').carousel({
                 
-                indicators:true
+                indicators:true    
             });
+            
+             $('.slider').slider({full_width: true});
+            
           
            
         });
