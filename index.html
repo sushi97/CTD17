@@ -23,19 +23,20 @@
                 <a href="#home" class="brand-logo">CTD17</a>
                 <a href="#" data-activates="mobile-module" class="button-collapse dropdown-button right waves-effect waves-light" id="nav-but"><i class="material-icons center">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#home" class="waves-effect waves-light">Home</a></li>
-                    <li><a href="#events" class="waves-effect waves-light">Events</a></li>
-                    <li><a href="#sigs" class="waves-effect waves-light">SIGs</a></li>
-                    <li class="waves-effect waves-light"><a href="#about">About Us</a></li>
+                    <li class="nav-home"><a href="#home" class="waves-effect waves-light">Home</a></li>
+                    <li class="nav-events"><a href="#events" class="waves-effect waves-light">Events</a></li>
+                    <li class="nav-sigs"><a href="#sigs" class="waves-effect waves-light">SIGs</a></li>
+                    <li class="nav-about"><a class="waves-effect waves-light" href="#about">About Us</a>
+                    </li>
                 </ul>
                 <ul class="dropdown-content" id="mobile-module">
-                    <li><a href="#home" class="waves-effect waves-green">Home</a></li>
-                    <li><a href="#events" class="waves-effect waves-green">Events</a></li>
-                    <li><a href="#sigs" class="waves-effect waves-green">SIGs</a></li>
+                    <li class="nav-home"><a href="#home" class="waves-effect waves-green">Home</a></li>
+                    <li class="nav-events"><a href="#events" class="waves-effect waves-green">Events</a></li>
+                    <li class="nav-sigs"><a href="#sigs" class="waves-effect waves-green">SIGs</a></li>
                     <li class="divider"></li>
-                    <li><a href="#about" class="waves-effect waves-green">About Us</a></li>
+                    <li class="nav-about"><a href="#about" class="waves-effect waves-green">About Us</a>
+                    </li>
                 </ul>
-
             </div>
         </nav>
     </div>
@@ -47,7 +48,7 @@
             </div>
         </div>
 
-        <div class="container white">
+        <div id="home-range" class="container white">
             <div class="section">
                 <div class="row">
                     <div class="col s12">
@@ -67,7 +68,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div id="events-range" class="container">
             <div class="section">
                 <div class="row">
                     <div class="col s12">
@@ -104,7 +105,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div id="sigs-range" class="container">
             <div class="section">
                 <div class="row">
                     <div class="col s12">
@@ -154,7 +155,7 @@
 
 
     <footer id="about" class="page-footer scrollspy cyan darken-2">
-        <div class="container white-text">
+        <div id="about-range" class="container white-text">
             <div class="row">
                 <div class="col s12 m6 l8 left">
                     <h4 class="Contact">Contact Us</h4>
