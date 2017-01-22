@@ -5,9 +5,11 @@
             $('.parallax').parallax();
             $('.dropdown-button').dropdown({
                 constrain_width: false,
-                belowOrigin: true,
+                belowOrigin: true
             });
-            $('.scrollspy').scrollSpy();
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 0
+            });
             $('.carousel').carousel();
 
         });

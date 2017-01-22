@@ -2,10 +2,6 @@
     width: 64px;
 }
 
-.ram {
-    background-color: darkgreen;
-}
-
 .carousel .carousel-item {
     width: 300px !important;
 }
