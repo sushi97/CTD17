@@ -2,10 +2,23 @@
     width: 64px;
 }
 
-.carousel .carousel-item {
-    width: 300px !important;
-}
-
 .parallax-container {
     height: 400px;
+}
+
+.carousel-item div {
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+.carousel-item div img {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px !important;
+}
+
+.carousel-item {
+    height: 300px !important;
+    width: 300px !important;
 }
