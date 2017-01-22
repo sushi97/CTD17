@@ -23,32 +23,19 @@
             var events = parseInt($('#events-range').position().top);
             var sigs = parseInt($('#sigs-range').position().top);
             var about = parseInt($('#about-range').position().top);
-            console.log(home);
-            console.log(events);
-            console.log(sigs);
-            console.log(about);
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
-                console.log(scroll);
+                $('.nav-home').removeClass('active');
+                $('.nav-events').removeClass('active');
+                $('.nav-sigs').removeClass('active');
+                $('.nav-about').removeClass('active');
                 if (scroll < home) {
                     $('.nav-home').addClass('active');
-                    $('.nav-events').removeClass('active');
-                    $('.nav-sigs').removeClass('active');
-                    $('.nav-about').removeClass('active');
                 } else if (scroll > home && scroll < events) {
-                    $('.nav-home').removeClass('active');
                     $('.nav-events').addClass('active');
-                    $('.nav-sigs').removeClass('active');
-                    $('.nav-about').removeClass('active');
                 } else if (scroll > events && scroll < sigs) {
-                    $('.nav-home').removeClass('active');
-                    $('.nav-events').removeClass('active');
                     $('.nav-sigs').addClass('active');
-                    $('.nav-about').removeClass('active');
                 } else if (scroll > sigs) {
-                    $('.nav-home').removeClass('active');
-                    $('.nav-events').removeClass('active');
-                    $('.nav-sigs').removeClass('active');
                     $('.nav-about').addClass('active');
                 }
             });
