@@ -5,3 +5,7 @@
 .carousel .carousel-item {
     width: 300px !important;
 }
+
+.parallax-container {
+    height: 400px;
+}
