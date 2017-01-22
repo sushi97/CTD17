@@ -10,21 +10,15 @@
             $('.scrollspy').scrollSpy({
                 scrollOffset: 0
             });
-<<<<<<< HEAD
             $('.carousel').carousel();
-
-=======
             $('.scrollspy').scrollSpy();
             $('.carousel').carousel({
-                
-                indicators:true    
+
+                indicators: true
             });
-            
-             $('.slider').slider({full_width: true});
-            
-          
-           
->>>>>>> origin/Carousel
+            $('.slider').slider({
+                full_width: true
+            });
         });
 
     }); // end of document ready
