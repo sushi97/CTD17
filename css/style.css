@@ -6,19 +6,15 @@
     height: 400px;
 }
 
-.carousel-item div {
-    text-align: center;
-    height: 300px;
-    width: 300px;
-}
-
-.carousel-item div img {
+.carousel-item img {
     margin-top: 50px;
+    margin-bottom: 50px;
     height: 200px;
     width: 200px !important;
 }
 
 .carousel-item {
+    text-align: center;
     height: 300px !important;
     width: 300px !important;
 }

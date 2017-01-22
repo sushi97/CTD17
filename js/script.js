@@ -6,7 +6,9 @@
             $('.parallax').parallax();
             $('.dropdown-button').dropdown({
                 constrain_width: false,
-                belowOrigin: true
+                belowOrigin: true,
+                alignment: 'right',
+                gutter: -18
             });
             $('.scrollspy').scrollSpy({
                 scrollOffset: 0
