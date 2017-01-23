@@ -14,9 +14,6 @@
                 scrollOffset: 0
             });
             $('.carousel').carousel();
-            $('.carousel').carousel({
-                indicators: true
-            });
             $('.slider').slider({
                 full_width: true
             });
