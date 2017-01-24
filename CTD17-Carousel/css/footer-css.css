@@ -1,0 +1,95 @@
+.footer-main{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+
+.footer-main .footer-left,
+.footer-main .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.footer-main h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+    text-decoration: underline;
+}
+
+
+
+.footer-main .footer-left{
+	width: 55%;
+    margin-left: 100px;     
+}
+
+.footer-main .footer-left i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-main .footer-left i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-main .footer-left p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+
+
+.footer-main .footer-left p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-main .footer-right{
+	margin-right: 50px;
+    width: 20%;
+}
+
+
+.footer-main .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-main .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+

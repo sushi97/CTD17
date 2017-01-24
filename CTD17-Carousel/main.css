@@ -1,0 +1,111 @@
+.page
+{
+    animation-name: fadeIn;
+    animation-duration: 7000ms;
+    animation-delay: 0ms;
+}
+
+.animated
+{
+    width: 99%;
+    position: absolute;
+    z-index: 7;
+    padding-top: 200px;
+    animation-name: ZoomOut;
+    animation-delay: 5000ms;
+    animation-duration: 4500ms;
+}
+
+.welcome1
+{
+    margin-left: 30%;
+    width: 40%;
+}
+
+.c
+{
+    position: absolute;
+    width=40%;
+    animation-name: fadeInRight;
+    animation-duration: 2000ms;
+    animation-delay: 0ms;
+}
+
+.t
+{
+    position: absolute;
+    width=40%;
+    animation-name: fadeInDown;
+    animation-duration: 2000ms;
+    animation-delay: 0ms;
+}
+
+.d
+{
+    width=40%;
+    animation-name: fadeInLeft;
+    animation-duration: 2000ms;
+    animation-delay: 0ms;
+}
+
+.welcome2
+{
+    width: 38%;
+    margin-top: 10px;
+    margin-left: 31%;
+    animation-name: fadeInUp;
+    animation-duration: 6000ms;
+    animation-delay: 0ms;
+}
+.welcome3
+{
+    width: 34%;
+    margin-top: 10px;
+    margin-left: 33%;
+    animation-name: fadeInUp;
+    animation-duration: 6000ms;
+    animation-delay: 0ms;
+}
+
+@keyframes fadeInDown
+{
+    from {opacity: 0; transform: translate3d(0,-100%,0);
+            -webkit-transform: translate3d(0,-100%,0);}
+    to {opacity: 1; transform: none;}
+}
+
+@keyframes fadeInLeft
+{
+    from {opacity: 0; transform: translate3d(45%,0,0);
+            -webkit-transform: translate3d(45%,0,0);}
+    to {opacity: 1; transform: none;}
+}
+
+@keyframes fadeInRight
+{
+    from {opacity: 0; transform: translate3d(-45%,0,0);
+            -webkit-transform: translate3d(-45%,0,0);}
+    to {opacity: 1; transform: none;}
+}
+
+@keyframes fadeInUp
+{
+    from {opacity: 0; transform: translate3d(0,100%,0);
+            -webkit-transform: translate3d(0,100%,0);}
+    to {opacity: 1; transform: none;}
+}
+
+@keyframes fadeIn
+{
+    0% {opacity: 0;}
+    90%{opacity: 0.03;}
+    95%{opacity: 0.05;}
+    100% {opacity: 1;}
+}
+
+@keyframes ZoomOut
+{
+    0% {opacity: 1;}
+    50% {opacity: 0; transform: scale3d(.5,.5,.5);
+            -webkit-transform: scale3d(.5,.5,.5);}
+}
