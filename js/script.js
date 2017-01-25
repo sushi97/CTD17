@@ -38,6 +38,8 @@
                     $('.nav-about').addClass('active');
                 }
             });
+
+            $('.animated').delay(6000).fadeOut(500);
         });
 
 
