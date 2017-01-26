@@ -81,6 +81,10 @@
     animation-delay: 0ms;
 }
 
+.parallax-container .row {
+    opacity: .8
+}
+
 .wave-effect {
     z-index: 1;
     position: absolute;
