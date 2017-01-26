@@ -40,8 +40,32 @@
             });
 
             $('.animated').delay(6000).fadeOut(500);
+
+            $('.box').hover(function () {
+                $(this).find('.wave-effect').addClass('ripple');
+                $(this).find('.black-img').animate({
+                    opacity: '0',
+                    height: '130px',
+                    width: '130px'
+                }, 300);
+                $(this).find('.white-img').animate({
+                    opacity: '1',
+                    height: '130px',
+                    width: '130px'
+                }, 300);
+            }, function () {
+                $(this).find('.wave-effect').removeClass('ripple');
+                $(this).find('.black-img').animate({
+                    opacity: '1',
+                    height: '150px',
+                    width: '150px'
+                }, 700);
+                $(this).find('.white-img').animate({
+                    opacity: '0',
+                    height: '150px',
+                    width: '150px'
+                }, 700);
+            });
         });
-
-
     }); // end of document ready
 })(jQuery); // end of jQuery name space
