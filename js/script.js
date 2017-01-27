@@ -3,7 +3,13 @@
     $(function () {
 
         $(document).ready(function () {
+            
+            $('.anime_ctd').delay(6000).fadeOut(500);
+            $('.button-collapse').sideNav({
+                 closeOnClick: true
+            });
             $('.parallax').parallax();
+            
             $('.dropdown-button').dropdown({
                 constrain_width: false,
                 belowOrigin: true,
@@ -13,7 +19,7 @@
             $('.scrollspy').scrollSpy({
                 scrollOffset: 0
             });
-            $('.carousel').carousel();
+            $('.carousel').carousel();  
             $('.slider').slider({
                 full_width: true
             });
