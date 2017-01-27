@@ -39,8 +39,6 @@
                 }
             });
 
-            $('.animated').delay(6000).fadeOut(500);
-
             $('.box').hover(function () {
                 $(this).find('.wave-effect').addClass('ripple');
                 $(this).find('.black-img').animate({

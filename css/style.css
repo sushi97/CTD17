@@ -20,19 +20,21 @@
 }
 
 .page {
-    animation-name: fadeIn;
+    animation-name: FadeIn;
     animation-duration: 7000ms;
-    animation-delay: 0ms;
+    animation-delay: 0000ms;
 }
 
-.animated {
+.startAnime {
     width: 99%;
     position: absolute;
     z-index: 7;
     padding-top: 200px;
     animation-name: ZoomOut;
     animation-delay: 5000ms;
-    animation-duration: 4500ms;
+    animation-duration: 4000ms;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
 }
 
 .welcome1 {
@@ -43,7 +45,7 @@
 .c {
     position: absolute;
     width=40%;
-    animation-name: fadeInRight;
+    animation-name: FadeInRight;
     animation-duration: 2000ms;
     animation-delay: 0ms;
 }
@@ -51,14 +53,14 @@
 .t {
     position: absolute;
     width=40%;
-    animation-name: fadeInDown;
+    animation-name: FadeInDown;
     animation-duration: 2000ms;
     animation-delay: 0ms;
 }
 
 .d {
     width=40%;
-    animation-name: fadeInLeft;
+    animation-name: FadeInLeft;
     animation-duration: 2000ms;
     animation-delay: 0ms;
 }
@@ -67,7 +69,7 @@
     width: 38%;
     margin-top: 10px;
     margin-left: 31%;
-    animation-name: fadeInUp;
+    animation-name: FadeInUp;
     animation-duration: 6000ms;
     animation-delay: 0ms;
 }
@@ -76,7 +78,7 @@
     width: 34%;
     margin-top: 10px;
     margin-left: 33%;
-    animation-name: fadeInUp;
+    animation-name: FadeInUp;
     animation-duration: 6000ms;
     animation-delay: 0ms;
 }
@@ -135,7 +137,7 @@
     margin-bottom: 0px;
 }
 
-@keyframes fadeInDown {
+@keyframes FadeInDown {
     from {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
@@ -147,7 +149,7 @@
     }
 }
 
-@keyframes fadeInLeft {
+@keyframes FadeInLeft {
     from {
         opacity: 0;
         transform: translate3d(45%, 0, 0);
@@ -159,7 +161,7 @@
     }
 }
 
-@keyframes fadeInRight {
+@keyframes FadeInRight {
     from {
         opacity: 0;
         transform: translate3d(-45%, 0, 0);
@@ -171,7 +173,7 @@
     }
 }
 
-@keyframes fadeInUp {
+@keyframes FadeInUp {
     from {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
@@ -183,7 +185,7 @@
     }
 }
 
-@keyframes fadeIn {
+@keyframes FadeIn {
     0% {
         opacity: 0;
     }
@@ -199,10 +201,10 @@
 }
 
 @keyframes ZoomOut {
-    0% {
+    from {
         opacity: 1;
     }
-    50% {
+    to {
         opacity: 0;
         transform: scale3d(.5, .5, .5);
         -webkit-transform: scale3d(.5, .5, .5);
