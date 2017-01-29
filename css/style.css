@@ -3,7 +3,8 @@
 }
 
 .parallax-container {
-    height: 400px;
+    min-height: 450px;
+    height: auto;
 }
 
 .carousel-item img {
@@ -86,12 +87,8 @@ nav {
     animation-delay: 0ms;
 }
 
-.userView {
-    background-color: black;
-}
-
 .parallax-container .row {
-    opacity: .8
+    opacity: .9
 }
 
 .wave-effect {
@@ -213,4 +210,9 @@ nav {
         transform: scale3d(.5, .5, .5);
         -webkit-transform: scale3d(.5, .5, .5);
     }
+}
+
+.nav-but {
+    position: fixed;
+    margin: 10px;
 }
