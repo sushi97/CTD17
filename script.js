@@ -7,7 +7,6 @@
 
         $(document).ready(function () {
             
-            
             $('.modal').modal();
 
             $('.anime_ctd').delay(6000).fadeOut(500);
