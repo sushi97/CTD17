@@ -6,6 +6,7 @@
     $(function () {
 
         $(document).ready(function () {
+<<<<<<< HEAD
             
             $('.modal').modal({
                   dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -26,7 +27,14 @@
                 belowOrigin: true,
                 alignment: 'right',
                 gutter: -18
+=======
+
+            $('.anime_ctd').delay(6000).fadeOut(500);
+            $('.button-collapse').sideNav({
+                closeOnClick: true
+>>>>>>> origin/master
             });
+            $('.parallax').parallax();
             $('.scrollspy').scrollSpy({
                 scrollOffset: 0
             });
@@ -34,6 +42,7 @@
             $('.slider').slider({
                 full_width: true
             });
+            $('.modal').modal();
 
             var home = parseInt($('#home-range').position().top, 10),
                 events = parseInt($('#events-range').position().top, 10),

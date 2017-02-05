@@ -1,5 +1,7 @@
 #nav-but {
-    width: 64px;
+    z-index: 10;
+    position: fixed;
+    margin: 10px;
 }
 
 .parallax-container {
@@ -208,11 +210,14 @@ nav {
     }
 }
 
+<<<<<<< HEAD
 .nav-but {
     position: fixed;
     margin: 10px;
 }
 
+=======
+>>>>>>> origin/master
 footer.page-footer {
     margin-top: 0px;
 }
