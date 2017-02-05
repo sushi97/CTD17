@@ -21,6 +21,19 @@
 
 <body>
 
+    <!------facebook-plugin--------->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="anime_ctd">
         <div class="welcome">
             <img class="welcome1 c responsive-img" src="images/C1.png" />
@@ -281,7 +294,7 @@
     <div id="sigs" class="scrollspy page">
         <div class="parallax-container valign-wrapper">
             <div class="row valign">
-                <h2 class="white-text">SIGS & SEMINARS</h2>
+                <h2 class="white-text center-align">SIGS & SEMINARS</h2>
             </div>
             <div class="parallax">
                 <img src="images/credenzpic3.jpg">
@@ -431,7 +444,7 @@
     <footer id="about" class="page-footer scrollspy teal accent-4 page">
         <div id="about-range" class="container white-text">
             <div class="row">
-                <div class="col s12 m6 l8 left">
+                <div class="col s12 m6 l8">
                     <h4 class="Contact">Contact Us</h4>
                     <div>
                         <p><i class="fa fa-phone"></i> +1 555 123456,152465315</p>
@@ -443,9 +456,11 @@
                 </div>
                 <div class="col s12 m6 l4">
                     <h4 class="Contact">Follow Us</h4>
-                    <div class="footer-icons">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    <div class="section">
+                        <div class="fb-like" data-href="https://www.facebook.com/credenztechdayz17/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                    </div>
+                    <div class="section">
+                        <iframe src="https://ghbtns.com/github-btn.html?user=sushi97&repo=CTD17&type=star&count=none&size=none" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
                     </div>
                 </div>
             </div>
