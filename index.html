@@ -4,20 +4,24 @@
 <head>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>CTD17</title>
+    <link rel="icon" href="images/ctdsquare.png" type="image/jpg">
+    <title>CTD'17 | Credenz Tech Dayz '17</title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <!--Import stylesheet-->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="stylesheet" href="css/footer-css.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!link rel="stylesheet" href="css/footer-css.css">
+    <!--Import jQuery before materialize.js-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
 
-    <div class="animated">
+    <div class="anime_ctd">
         <div class="welcome">
             <img class="welcome1 c responsive-img" src="images/C1.png" />
             <img class="welcome1 t responsive-img" src="images/T1.png" />
@@ -27,43 +31,45 @@
         <img class="welcome3 responsive-img" src="images/Dates1.png" />
     </div>
 
-    <div class="navbar-fixed page">
-        <nav class="teal lighten-1">
-            <div class="nav-wrapper container">
-                <a href="#home" class="brand-logo">CTD17</a>
-                <a href="javascript:;" data-activates="mobile-module" class="button-collapse dropdown-button right waves-effect waves-light" id="nav-but"><i class="material-icons center">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li class="nav-home"><a href="#home" class="waves-effect waves-light">Home</a></li>
-                    <li class="nav-events"><a href="#events" class="waves-effect waves-light">Events</a></li>
-                    <li class="nav-sigs"><a href="#sigs" class="waves-effect waves-light">SIGs</a></li>
-                    <li class="nav-about"><a class="waves-effect waves-light" href="#about">About Us</a>
-                    </li>
-                </ul>
-                <ul class="dropdown-content" id="mobile-module">
-                    <li class="nav-home"><a href="#home" class="waves-effect waves-green">Home</a></li>
-                    <li class="nav-events"><a href="#events" class="waves-effect waves-green">Events</a></li>
-                    <li class="nav-sigs"><a href="#sigs" class="waves-effect waves-green">SIGs</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-about"><a href="#about" class="waves-effect waves-green">About Us</a>
-                    </li>
-                </ul>
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="userView teal">
+                <div class="container">
+                    <img src="images/ctdsquarewhite.png" width="100%">
+                </div>
             </div>
-        </nav>
-    </div>
+        </li>
+        <li id="nav-home"><a class="waves-effect" href="#home"><i class="material-icons">store</i>Home</a></li>
+        <li id="nav-events"><a class="waves-effect" href="#events"><i class="material-icons">dashboard</i>Events</a></li>
+        <li id="nav-ping"><a class="waves-effect" href="#ping"><i class="material-icons">import_contacts</i>Ping</a></li>
+        <li id="nav-seminars"><a class="waves-effect" href="#sigs"><i class="material-icons">mic</i>Seminars</a></li>
+        <li id="nav-sigs"><a class="waves-effect" href="#sigs"><i class="material-icons">record_voice_over</i>SIGs</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Communicate</a></li>
+        <li id="nav-about"><a class="waves-effect" href="#about"><i class="material-icons">call</i>Contact us</a></li>
+    </ul>
+
+    <a href="#!" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light red accent-3 page nav-but z-depth-2"><i class="material-icons">menu</i></a>
 
     <div id="home" class="scrollspy page">
-        <div class="parallax-container">
+        <div class="parallax-container valign-wrapper">
+            <div class="row valign">
+                <img class="col s6 push-s3" src="images/fwdctdlogos/ctdlogowhite.png">
+            </div>
             <div class="parallax">
-                <img src="images/background1.jpg">
+                <img src="images/credenzpic1.jpg">
             </div>
         </div>
 
-        <div id="home-range" class="container white">
-            <div class="section">
+        <div id="home-range" class="teal lighten-1">
+            <div class="container section white-text">
                 <div class="row">
                     <div class="col s12">
-                        <h3>CTD</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h3 class="center-align">CTD</h3>
+                        <div class="divider"></div>
+                        <p class="center-align">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
             </div>
@@ -72,101 +78,275 @@
 
 
     <div id="events" class="scrollspy page">
-        <div class="parallax-container">
-            <div class="parallax">
-                <img src="images/background2.jpg">
+        <div class="parallax-container valign-wrapper">
+            <div class="row valign">
+                <h2 class="white-text">EVENTS</h2>
+            </div>
+            <div class="parallax responsive-img">
+                <img src="images/credenzpic2.jpg">
             </div>
         </div>
+                         
+        
+                    <div id="modal1" class="modal">
+                        <div class="modal-content pink">
+                           <div class="row">
+                            <div class="col s12 m4 l4">
+                            <img class="responsive-img" src="images/credenzpic3.jpg"> 
+                            </div>
+                            <div class="col s12 m4 l4">
+                               <p>some text</p>
+                               </div>
+                         </div>
+                           <div class="modal-footer pink">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                       </div>
+                    </div>
+                          
+                     <div id="modal2" class="modal">
+                        <div class="modal-content cyan">
+                           <div class="row">
+                            <div class="col s12 m4 l4">
+                            <img class="responsive-img" src="images/credenzpic3.jpg"> 
+                            </div>
+                            <div class="col s12 m4 l4">
+                               <p>some text</p>
+                            </div>
+                         </div>
+                            <div class="modal-footer cyan">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                       </div>
+                    </div>
+                          
+                        <div id="modal3" class="modal">
+                        <div class="modal-content purple">
+                           <div class="row">
+                            <div class="col s12 m4 l4">
+                            <img class="responsive-img" src="images/credenzpic3.jpg"> 
+                            </div>
+                            <div class="col s12 m4 l4">
+                               <p>some text</p>
+                               </div>    
+                            </div>
+                            <div class="modal-footer purple">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                       </div>
+                    </div>
+                              
+                        <div id="modal4" class="modal">
+                        <div class="modal-content indigo">
+                           <div class="row">
+                            <div class="col s12 m4 l4">
+                            <img class="responsive-img" src="images/credenzpic3.jpg"> 
+                            </div>
+                            <div class="col s12 m4 l4">
+                               <p>some text</p>
+                            </div>
+                               
+                         </div>
+                            <div class="modal-footer indigo">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                       </div>
+                    </div>
+                        <div id="modal5" class="modal">
+                        <div class="modal-content orange">
+                           <div class="row">
+                            <div class="col s12 m4 l4">
+                            <img class="responsive-img" src="images/credenzpic3.jpg"> 
+                            </div>
+                            <div class="col s12 m4 l4">
+                               <p>some text</p>
+                            </div>
+                               
+                         </div>
+                            <div class="modal-footer orange">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                       </div>
+                    </div>
+        
+        
+                      <div id="modal6" class="modal">
+                        <div class="modal-content light-green">
+                           <div class="row">
+                            <div class="col s12 m4 l4">
+                            <img class="responsive-img" src="images/credenzpic3.jpg"> 
+                            </div>
+                            <div class="col s12 m4 l4">
+                               <p>some text</p>
+                            </div>
+                               
+                         </div>
+                            <div class="modal-footer light-green">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                          </div>
+                       </div>
+                    </div>
 
-        <div id="events-range" class="container">
-            <div class="section">
+        <div id="events-range" class="teal lighten-1">
+            <div class="container section">
+                <div class="row">
+                   
+                    <a href="#modal1">
+                        <div class="col s6 m4 l4">
+                        <div class="card box">
+                            <img class="black-img" src="images/CTD_logos_black/enigggg.png">
+                            <!img class="black-img" src="images/fwdctdlogos/enigggg.png">
+                            <div class="wave-effect pink">
+                            </div>
+                            <img class="white-img" src="images/fwdctdlogos/enigggg.png">
+                        </div>
+                    </div></a>
 
-                <div class="row">
-                    <div class="box col s12 m4 l4">
-                        <img class="black-img" src="images/CTD_logos_black/enigggg.png">
-                        <div class="wave-effect pink">
+                     <a href="#modal2">
+                         <div class="col s6 m4 l4">
+                        <div class="card box">
+                            <img class="black-img" src="images/CTD_logos_black/InQUIZitive.png">
+                            <!img class="black-img" src="images/fwdctdlogos/InQUIZitive.png">
+                            <div class="wave-effect cyan">
+                            </div>
+                            <img class="white-img" src="images/fwdctdlogos/InQUIZitive.png">
                         </div>
-                        <img class="white-img" src="images/fwdctdlogos/enigggg.png">
-                    </div>
-                    <div class="box col s12 m4 l4">
-                        <img class="black-img" src="images/CTD_logos_black/InQUIZitive.png">
-                        <div class="wave-effect purple">
+                    </div></a>
+
+                   <a href="#modal3">
+                       <div class="col s6 m4 l4">
+                        <div class="card box">
+                            <img class="black-img" src="images/CTD_logos_black/NCC.png">
+                            <!img class="black-img" src="images/fwdctdlogos/NCC.png">
+                            <div class="wave-effect purple">
+                            </div>
+                            <img class="white-img" src="images/fwdctdlogos/NCC.png">
                         </div>
-                        <img class="white-img" src="images/fwdctdlogos/InQUIZitive.png">
-                    </div>
-                    <div class="box col s12 m4 l4">
-                        <img class="black-img" src="images/CTD_logos_black/NCC.png">
-                        <div class="wave-effect cyan">
+                    </div></a> 
+
+                    <a href="#modal4">
+                        <div class="col s6 m4 l4">
+                        <div class="card box">
+                            <img class="black-img" src="images/CTD_logos_black/NTH.png">
+                            <!img class="black-img" src="images/fwdctdlogos/NTH.png">
+                            <div class="wave-effect indigo">
+                            </div>
+                            <img class="white-img" src="images/fwdctdlogos/NTH.png">
                         </div>
-                        <img class="white-img" src="images/fwdctdlogos/NCC.png">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="box col s12 m4 l4">
-                        <img class="black-img" src="images/CTD_logos_black/NTH.png">
-                        <div class="wave-effect indigo">
+                    </div></a>
+
+                   <a href="#modal5">
+                       <div class="col s6 m4 l4">
+                        <div class="card box">
+                            <img class="black-img" src="images/CTD_logos_black/UNRAVEL.png">
+                            <!img class="black-img" src="images/fwdctdlogos/UNRAVEL.png">
+                            <div class="wave-effect orange">
+                            </div>
+                            <img class="white-img" src="images/fwdctdlogos/UNRAVEL.png">
                         </div>
-                        <img class="white-img" src="images/fwdctdlogos/NTH.png">
                     </div>
-                    <div class="box col s12 m4 l4">
-                        <img class="black-img" src="images/CTD_logos_black/UNRAVEL.png">
-                        <div class="wave-effect orange">
+                    </a> 
+
+                    <a href="#modal6">
+                        
+                        <div class="col s6 m4 l4">
+                        <div class="card box">
+                            <img class="black-img" src="images/CTD_logos_black/XOdia.png">
+                            <!img class="black-img" src="images/fwdctdlogos/XOdia.png">
+                            <div class="wave-effect light-green">
+                            </div>
+                            <img class="white-img" src="images/fwdctdlogos/XOdia.png">
                         </div>
-                        <img class="white-img" src="images/fwdctdlogos/UNRAVEL.png">
-                    </div>
-                    <div class="box col s12 m4 l4">
-                        <img class="black-img" src="images/CTD_logos_black/XOdia.png">
-                        <div class="wave-effect light-green">
-                        </div>
-                        <img class="white-img" src="images/fwdctdlogos/XOdia.png">
-                    </div>
+                    </div></a> 
+
                 </div>
 
             </div>
         </div>
     </div>
 
-
-
-    <div id="sigs" class="scrollspy page">
-        <div class="parallax-container">
+    <div id="ping" class="scrollspy page">
+        <div class="parallax-container valign-wrapper">
+            <div class="row valign">
+                <h2 class="white-text">P.I.N.G</h2>
+            </div>
             <div class="parallax">
-                <img src="images/background3.jpg">
+                <img src="images/credenzpic4.jpg">
             </div>
         </div>
 
-        <div id="sigs-range" class="container">
-            <div class="section">
+        <div id="home-range" class="teal lighten-1">
+            <div class="container section white-text">
                 <div class="row">
                     <div class="col s12">
+                        <h3 class="center-align">P.I.N.G</h3>
+                        <div class="divider"></div>
+                        <p class="center-align">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sigs" class="scrollspy page">
+        <div class="parallax-container valign-wrapper">
+            <div class="row valign">
+                <h2 class="white-text">SIGS & SEMINARS</h2>
+            </div>
+            <div class="parallax">
+                <img src="images/credenzpic3.jpg">
+            </div>
+        </div>
+
+        <div id="sigs-range" class="teal lighten-1">
+            <!---------------------For desktop only-------->
+            <div class="container section hide-on-med-and-down ">
+                <div class="row">
+                    <div class="col s12 ">
                         <div class="slider">
-                            <ul class="slides">
-                                <li>
-                                    <img src="images/fwdctdlogos/seminars1.png">
-                                    <div class="caption center-align">
-                                        <h3>This is our big Tagline!</h3>
-                                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <ul class="slides teal">
+                                <li style="padding-top:5% ; padding-left:6%">
+                                    <div class="black card-panel col s4 z-depth-4 ">
+                                        <img src="images/fwdctdlogos/seminars1.png" class="responsive-img">
+                                    </div>
+                                    <div class="caption right-align col s8" style="padding-left:15%">
+                                        <div class=" left-align col s12 offset-s2">
+                                            <h3>This is our big Tagline!</h3>
+                                            <span class="light grey-text text-lighten-3 " style="text-align: center">Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release </span>
+                                        </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <img src="images/fwdctdlogos/sigs.png">
-                                    <div class="caption left-align">
-                                        <h3>Left Aligned Caption</h3>
-                                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <li style="padding-top:5% ; padding-left:6%">
+                                    <div class="black card-panel col s4 z-depth-4 ">
+                                        <img src="images/fwdctdlogos/sigs.png" class="responsive-img">
+                                    </div>
+                                    <div class="caption right-align col s8" style="padding-left:15%">
+                                        <div class=" left-align col s12 offset-s2">
+                                            <h3>This is our big Tagline!</h3>
+                                            <span class="light grey-text text-lighten-3 " style="text-align: center">Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release </span>
+                                        </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <img src="images/fwdctdlogos/ctd1.png">
-                                    <div class="caption right-align">
-                                        <h3>Right Aligned Caption</h3>
-                                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <li style="padding-top:5% ; padding-left:6%">
+                                    <div class="black card-panel col s4 z-depth-4 ">
+                                        <img src="images/fwdctdlogos/ctd1.png" class="responsive-img">
+                                    </div>
+                                    <div class="caption right-align col s8" style="padding-left:15%">
+                                        <div class=" left-align col s12 offset-s2">
+                                            <h3>This is our big Tagline!</h3>
+                                            <span class="light grey-text text-lighten-3 " style="text-align: center">Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release </span>
+                                        </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <img src="images/fwdctdlogos/credenz.png">
-                                    <div class="caption center-align">
-                                        <h3>This is our big Tagline!</h3>
-                                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <li style="padding-top:5% ; padding-left:6%">
+                                    <div class="black card-panel col s4 z-depth-4 ">
+                                        <img src="images/fwdctdlogos/seminars1.png" class="responsive-img">
+                                    </div>
+                                    <div class="caption right-align col s8" style="padding-left:15%">
+                                        <div class=" left-align col s12 offset-s2">
+                                            <h3>This is our big Tagline!</h3>
+                                            <span class="light grey-text text-lighten-3 " style="text-align: center">Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release </span>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -174,17 +354,91 @@
                     </div>
                 </div>
             </div>
+
+            <!---------------------For mobile and Tab only-------->
+            <div class="section hide-on-large-only ">
+                <div class="card">
+
+                    <div class="card-content cyan darken-1" id="sig1" >
+                        <img src="images/background1.jpg" class=" responsive-img z-depth-4">
+                        <div>
+                            <div class="caption right-align">
+                                <div class="left-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content cyan darken-1 " id="sig2">
+                        <img src="images/background2.jpg" class=" responsive-img z-depth-4">
+                        <div>
+                            <div class="caption right-align">
+                                <div class="left-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content cyan darken-1 " id="sig3" >
+                        <img src="images/background3.jpg" class=" responsive-img z-depth-4">
+                        <div>
+                            <div class="caption right-align">
+                                <div class="left-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content cyan darken-1" id="sig4">
+                        <img src="images/background1.jpg" class=" responsive-img z-depth-4">
+                        <div>
+                            <div class="caption right-align">
+                                <div class="left-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content cyan darken-1 " id="sig5">
+                        <img src="images/background2.jpg" class=" responsive-img z-depth-4">
+                        <div>
+                            <div class="caption right-align">
+                                <div class="left-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a class="active waves-effect waves-teal" href="#sig1">SIG 1</a></li>
+                            <li class="tab"><a class="waves-effect waves-teal" href="#sig2">SIG 2</a></li>
+                            <li class="tab"><a class="waves-effect waves-teal" href="#sig3">SIG 3</a></li>
+                            <li class="tab"><a class="waves-effect waves-teal" href="#sig4">SIG 4</a></li>
+                            <li class="tab"><a class="waves-effect waves-teal" href="#sig5">SIG 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
-    <footer id="about" class="page-footer scrollspy teal page">
+    <footer id="about" class="page-footer scrollspy teal accent-4 page">
         <div id="about-range" class="container white-text">
             <div class="row">
                 <div class="col s12 m6 l8 left">
@@ -206,17 +460,166 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+         <div class="footer-copyright">
             <div class="container">
-                Made by - WebTeam@pict
+                Developed by:
+                <a class="madal-trigger waves-effect waves-light btn" href="#develop">WebTeam@PISB</a>
             </div>
         </div>
     </footer>
-
-    <!--Import jQuery before materialize.js-->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/script.js"></script>
+    
+                   <div id="develop" class="modal bottom-sheet">
+        <div class="black" style="padding: 2px 2px 2px 2px;">
+            <center><h4 style="color: white">Developers</h4></center>
+        </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                <div class="col s12 m6 l4 center">
+                    
+                     <div class="valign-wrapper">
+                      
+                         <div class="col s4">
+                          
+                        <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                        <div class="col s8">
+                            Anurag Kallurwar
+                        </div>
+                      
+                     </div>
+                      
+                    
+                    </div>
+            
+                <div class="col s12 m6 l4 center">
+                    
+                    <div class="valign-wrapper">
+                    
+                        <div class="col s4">
+                            <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                    <div class="col s8">
+                            Sushrut Shimpi
+                    </div>
+                         
+                    </div>
+                     
+                </div>
+                
+          
+                <div class="col s12 m6 l4 center">
+                    
+                    <div class="valign-wrapper">
+                    
+                       <div class="col s4">
+                            <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                        <div class="col s8">
+                            Rameshwar Dhondge
+                        </div>
+                     
+                    </div>
+                       
+                    </div>
+                    
+                </div>
+                
+                
+                        <div class="row">
+                <div class="col s12 m6 l4 center">
+                    
+                     <div class="valign-wrapper">
+                      
+                         <div class="col s4">
+                          
+                        <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                        <div class="col s8">
+                            Anurag Kallurwar
+                        </div>
+                      
+                     </div>
+                      
+                    
+                    </div>
+            
+                <div class="col s12 m6 l4 center">
+                    
+                    <div class="valign-wrapper">
+                    
+                        <div class="col s4">
+                            <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                    <div class="col s8">
+                            Sushrut Shimpi
+                    </div>
+                         
+                    </div>
+                     
+                </div>
+                
+          
+                <div class="col s12 m6 l4 center">
+                    
+                    <div class="valign-wrapper">
+                    
+                       <div class="col s4">
+                            <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                        <div class="col s8">
+                            Rameshwar Dhondge
+                        </div>
+                     
+                    </div>       
+                    </div>
+                </div>
+                 
+                
+                     <div class="row">
+                <div class="col s12 m6 l4 center">
+                    
+                     <div class="valign-wrapper">
+                      
+                         <div class="col s4">
+                          
+                        <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                        <div class="col s8">
+                            Anurag Kallurwar
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12 m6 l4 center">
+                    
+                    <div class="valign-wrapper">
+                    
+                        <div class="col s4">
+                            <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                    <div class="col s8">
+                            Sushrut Shimpi
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 center">
+                    
+                    <div class="valign-wrapper">
+                    
+                       <div class="col s4">
+                            <img src="images/fwdctdlogos/NTH.png" class="circle responsive-img black">
+                        </div>
+                        <div class="col s8">
+                            Rameshwar Dhondge
+                        </div>
+                    </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+     
 </body>
 
 </html>

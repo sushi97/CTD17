@@ -3,7 +3,8 @@
 }
 
 .parallax-container {
-    height: 400px;
+    min-height: 450px;
+    height: auto;
 }
 
 .carousel-item img {
@@ -19,18 +20,23 @@
     width: 300px !important;
 }
 
+nav {
+    position: fixed;
+    z-index: 3;
+}
+
 .page {
-    animation-name: fadeIn;
+    animation-name: fadeIn1;
     animation-duration: 7000ms;
     animation-delay: 0ms;
 }
 
-.animated {
+.anime_ctd {
     width: 99%;
-    position: absolute;
+    position: fixed;
     z-index: 7;
     padding-top: 200px;
-    animation-name: ZoomOut;
+    animation-name: ZoomOut1;
     animation-delay: 5000ms;
     animation-duration: 4500ms;
 }
@@ -43,7 +49,7 @@
 .c {
     position: absolute;
     width=40%;
-    animation-name: fadeInRight;
+    animation-name: fadeInRight1;
     animation-duration: 2000ms;
     animation-delay: 0ms;
 }
@@ -51,14 +57,14 @@
 .t {
     position: absolute;
     width=40%;
-    animation-name: fadeInDown;
+    animation-name: fadeInDown1;
     animation-duration: 2000ms;
     animation-delay: 0ms;
 }
 
 .d {
     width=40%;
-    animation-name: fadeInLeft;
+    animation-name: fadeInLeft1;
     animation-duration: 2000ms;
     animation-delay: 0ms;
 }
@@ -67,7 +73,7 @@
     width: 38%;
     margin-top: 10px;
     margin-left: 31%;
-    animation-name: fadeInUp;
+    animation-name: fadeInUp1;
     animation-duration: 6000ms;
     animation-delay: 0ms;
 }
@@ -76,9 +82,13 @@
     width: 34%;
     margin-top: 10px;
     margin-left: 33%;
-    animation-name: fadeInUp;
+    animation-name: fadeInUp1;
     animation-duration: 6000ms;
     animation-delay: 0ms;
+}
+
+.parallax-container .row {
+    opacity: .9
 }
 
 .wave-effect {
@@ -104,14 +114,14 @@
 .box {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 160px;
     background-color: white;
 }
 
 .box img {
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -127,11 +137,7 @@
     z-index: 2;
 }
 
-#events .container .section .row {
-    margin-bottom: 0px;
-}
-
-@keyframes fadeInDown {
+@keyframes fadeInDown1 {
     from {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
@@ -143,11 +149,11 @@
     }
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeInLeft1 {
     from {
         opacity: 0;
-        transform: translate3d(45%, 0, 0);
-        -webkit-transform: translate3d(45%, 0, 0);
+        transform: translate3d(48%, 0, 0);
+        -webkit-transform: translate3d(48%, 0, 0);
     }
     to {
         opacity: 1;
@@ -155,11 +161,11 @@
     }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInRight1 {
     from {
         opacity: 0;
-        transform: translate3d(-45%, 0, 0);
-        -webkit-transform: translate3d(-45%, 0, 0);
+        transform: translate3d(-48%, 0, 0);
+        -webkit-transform: translate3d(-48%, 0, 0);
     }
     to {
         opacity: 1;
@@ -167,7 +173,7 @@
     }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInUp1 {
     from {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
@@ -179,22 +185,19 @@
     }
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn1 {
     0% {
         opacity: 0;
     }
-    90% {
-        opacity: 0.03;
-    }
     95% {
-        opacity: 0.05;
+        opacity: 0.01;
     }
     100% {
         opacity: 1;
     }
 }
 
-@keyframes ZoomOut {
+@keyframes ZoomOut1 {
     0% {
         opacity: 1;
     }
@@ -204,3 +207,14 @@
         -webkit-transform: scale3d(.5, .5, .5);
     }
 }
+
+.nav-but {
+    position: fixed;
+    margin: 10px;
+}
+
+footer.page-footer {
+    margin-top: 0px;
+}
+
+.col {}
