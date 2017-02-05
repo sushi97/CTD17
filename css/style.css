@@ -89,10 +89,6 @@ nav {
     animation-delay: 0ms;
 }
 
-.parallax-container .row {
-    opacity: .9
-}
-
 .wave-effect {
     z-index: 1;
     position: absolute;
