@@ -1,5 +1,7 @@
 #nav-but {
-    width: 64px;
+    z-index: 10;
+    position: fixed;
+    margin: 10px;
 }
 
 .parallax-container {
@@ -206,11 +208,6 @@ nav {
         transform: scale3d(.5, .5, .5);
         -webkit-transform: scale3d(.5, .5, .5);
     }
-}
-
-.nav-but {
-    position: fixed;
-    margin: 10px;
 }
 
 footer.page-footer {

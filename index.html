@@ -46,7 +46,7 @@
         <li id="nav-about"><a class="waves-effect" href="#about"><i class="material-icons">call</i>Contact us</a></li>
     </ul>
 
-    <a href="#!" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light red accent-3 page nav-but z-depth-2"><i class="material-icons">menu</i></a>
+    <a id="nav-but" href="#!" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light red accent-3 page z-depth-2"><i class="material-icons">menu</i></a>
 
     <div id="home" class="scrollspy page">
         <div class="parallax-container valign-wrapper">
@@ -341,83 +341,87 @@
             </div>
 
             <!---------------------For mobile and Tab only-------->
-            <div class="section hide-on-large-only z-depth-2">
-                <div class="card">
-
-                    <div class="card-content teal" id="sig1">
-                        <img src="images/background1.jpg" class=" responsive-img z-depth-4">
-                        <div>
-                            <div class="caption right-align">
-                                <div class="left-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                             </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-content teal" id="sig2">
-                        <img src="images/background2.jpg" class=" responsive-img z-depth-4">
-                        <div>
-                            <div class="caption right-align">
-                                <div class="left-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                             </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-content teal" id="sig3">
-                        <img src="images/background3.jpg" class=" responsive-img z-depth-4">
-                        <div>
-                            <div class="caption right-align">
-                                <div class="left-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                             </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-content teal" id="sig4">
-                        <img src="images/background1.jpg" class=" responsive-img z-depth-4">
-                        <div>
-                            <div class="caption right-align">
-                                <div class="left-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                             </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-content teal" id="sig5">
-                        <img src="images/background2.jpg" class=" responsive-img z-depth-4">
-                        <div>
-                            <div class="caption right-align">
-                                <div class="left-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
-                             </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container section hide-on-large-only">
+                <div class="card teal">
 
                     <div class="card-tabs">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a class="active waves-effect waves-teal" href="#sig1">SIG 1</a></li>
-                            <li class="tab"><a class="waves-effect waves-teal" href="#sig2">SIG 2</a></li>
-                            <li class="tab"><a class="waves-effect waves-teal" href="#sig3">SIG 3</a></li>
-                            <li class="tab"><a class="waves-effect waves-teal" href="#sig4">SIG 4</a></li>
-                            <li class="tab"><a class="waves-effect waves-teal" href="#sig5">SIG 5</a></li>
+                        <ul class="tabs tabs-fixed-width tabs-transparent">
+                            <li class="tab"><a class="active" href="#sig1">SIG 1</a></li>
+                            <li class="tab"><a href="#sig2">SIG 2</a></li>
+                            <li class="tab"><a href="#sig3">SIG 3</a></li>
+                            <li class="tab"><a href="#sig4">SIG 4</a></li>
+                            <li class="tab"><a href="#sig5">SIG 5</a></li>
                         </ul>
                     </div>
+
+                    <div class="card-content">
+                        <div class="teal" id="sig1">
+                            <img src="images/background1.jpg" class=" responsive-img z-depth-4">
+                            <div>
+                                <div class="caption right-align">
+                                    <div class="left-align">
+                                        <h3>This is our big Tagline!</h3>
+                                        <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teal" id="sig2">
+                            <img src="images/background2.jpg" class=" responsive-img z-depth-4">
+                            <div>
+                                <div class="caption right-align">
+                                    <div class="left-align">
+                                        <h3>This is our big Tagline!</h3>
+                                        <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teal" id="sig3">
+                            <img src="images/background3.jpg" class=" responsive-img z-depth-4">
+                            <div>
+                                <div class="caption right-align">
+                                    <div class="left-align">
+                                        <h3>This is our big Tagline!</h3>
+                                        <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teal" id="sig4">
+                            <img src="images/background1.jpg" class=" responsive-img z-depth-4">
+                            <div>
+                                <div class="caption right-align">
+                                    <div class="left-align">
+                                        <h3>This is our big Tagline!</h3>
+                                        <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teal" id="sig5">
+                            <img src="images/background2.jpg" class=" responsive-img z-depth-4">
+                            <div>
+                                <div class="caption right-align">
+                                    <div class="left-align">
+                                        <h3>This is our big Tagline!</h3>
+                                        <span>Here's our small slogan.m Ipsum is simply dummy text of theascas printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -442,7 +446,7 @@
                         <iframe src="https://ghbtns.com/github-btn.html?user=sushi97&repo=CTD17&type=star&count=none&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
                     </div>
                     <div class="section no-pad-bot">
-                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcredenztechdayz17%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=false&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcredenztechdayz17%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=false&height=80&appId" width="350" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                     </div>
                 </div>
             </div>
