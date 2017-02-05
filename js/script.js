@@ -6,33 +6,20 @@
     $(function () {
 
         $(document).ready(function () {
-<<<<<<< HEAD
-            
+
             $('.modal').modal({
-                  dismissible: true, // Modal can be dismissed by clicking outside of the modal
-                  opacity: .5, // Opacity of modal background
-                  inDuration: 300, // Transition in duration
-                  outDuration: 200, // Transition out duration
-                  startingTop: '80%', // Starting top style attribute
-                  endingTop: '30%', // Ending top style attribute   
+                dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                opacity: .5, // Opacity of modal background
+                inDuration: 300, // Transition in duration
+                outDuration: 200, // Transition out duration
+                startingTop: '80%', // Starting top style attribute
+                endingTop: '30%', // Ending top style attribute   
             });
-            $('.anime_ctd').delay(6000).fadeOut(500);
-            $('.button-collapse').sideNav({
-                closeOnClick: true
-            });
-            $('.parallax').parallax();
 
-            $('.dropdown-button').dropdown({
-                constrain_width: false,
-                belowOrigin: true,
-                alignment: 'right',
-                gutter: -18
-=======
 
             $('.anime_ctd').delay(6000).fadeOut(500);
             $('.button-collapse').sideNav({
                 closeOnClick: true
->>>>>>> origin/master
             });
             $('.parallax').parallax();
             $('.scrollspy').scrollSpy({
