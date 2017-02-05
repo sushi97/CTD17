@@ -114,14 +114,14 @@ nav {
 .box {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 160px;
     background-color: white;
 }
 
 .box img {
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -135,10 +135,6 @@ nav {
 .box .white-img {
     opacity: 0;
     z-index: 2;
-}
-
-#events .container .section .row {
-    margin-bottom: 0px;
 }
 
 @keyframes fadeInDown1 {
@@ -216,3 +212,9 @@ nav {
     position: fixed;
     margin: 10px;
 }
+
+footer.page-footer {
+    margin-top: 0px;
+}
+
+.col {}
