@@ -26,6 +26,7 @@
             $('.slider').slider({
                 full_width: true
             });
+            $('.modal').modal();
 
             var home = parseInt($('#home-range').position().top, 10),
                 events = parseInt($('#events-range').position().top, 10),
