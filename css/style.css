@@ -89,6 +89,10 @@ nav {
     animation-delay: 0ms;
 }
 
+.parallax-container .row {
+    opacity: .9
+}
+
 .wave-effect {
     z-index: 1;
     position: absolute;
@@ -208,15 +212,4 @@ nav {
 
 footer.page-footer {
     margin-top: 0px;
-}
-
-#nav-title {
-    width: 90%;
-    margin: auto;
-    ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition-property: all;
-    transform: translate(-50%, -50%);
 }

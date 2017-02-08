@@ -33,23 +33,19 @@
 
             var home = parseInt($('#home-range').position().top, 10),
                 events = parseInt($('#events-range').position().top, 10),
-                ping = parseInt($('#ping-range').position().top, 10),
                 sigs = parseInt($('#sigs-range').position().top, 10),
                 about = parseInt($('#about-range').position().top, 10);
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
                 $('#nav-home').removeClass('active');
                 $('#nav-events').removeClass('active');
-                $('#nav-ping').removeClass('active');
                 $('#nav-sigs').removeClass('active');
                 $('#nav-about').removeClass('active');
                 if (scroll < home) {
                     $('#nav-home').addClass('active');
                 } else if (scroll > home && scroll < events) {
                     $('#nav-events').addClass('active');
-                } else if (scroll > events && scroll < ping) {
-                    $('#nav-ping').addClass('active');
-                } else if (scroll > ping && scroll < sigs) {
+                } else if (scroll > events && scroll < sigs) {
                     $('#nav-sigs').addClass('active');
                 } else if (scroll > sigs) {
                     $('#nav-about').addClass('active');
