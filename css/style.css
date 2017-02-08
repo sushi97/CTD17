@@ -28,21 +28,17 @@ nav {
 }
 
 #page {
-    display: none;
-    /*animation-name: fadeIn1;
-    animation-duration: 2000ms;
-    animation-delay: 5000ms;
-    animation-fill-mode: forwards;*/
+    opacity: 0;
 }
 
 .anime_ctd {
-    width: 99%;
+    width: 100%;
     position: fixed;
     z-index: 7;
-    padding-top: 150px;
-    /*animation-name: ZoomOut1;
-    animation-delay: 5000ms;
-    animation-duration: 4500ms;*/
+    /*padding-top: 150px;*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .welcome1 {
@@ -89,6 +85,72 @@ nav {
     animation-name: fadeInUp1;
     animation-duration: 6000ms;
     animation-delay: 0ms;
+}
+
+.spinner {
+    display: none;
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
 }
 
 .wave-effect {
@@ -190,17 +252,6 @@ nav {
     }
     to {
         opacity: 1;
-    }
-}
-
-@keyframes ZoomOut1 {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-        transform: scale3d(.5, .5, .5);
-        -webkit-transform: scale3d(.5, .5, .5);
     }
 }
 
