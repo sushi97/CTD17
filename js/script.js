@@ -12,8 +12,8 @@
                 opacity: .5, // Opacity of modal background
                 inDuration: 300, // Transition in duration
                 outDuration: 200, // Transition out duration
-                startingTop: '80%', // Starting top style attribute
-                endingTop: '30%', // Ending top style attribute   
+                startingTop: '4%', // Starting top style attribute
+                endingTop: '10%', // Ending top style attribute   
             });
 
 
@@ -29,7 +29,7 @@
             $('.slider').slider({
                 full_width: true
             });
-            $('.modal').modal();
+            //$('.modal').modal();
 
             var home = parseInt($('#home-range').position().top, 10),
                 events = parseInt($('#events-range').position().top, 10),
