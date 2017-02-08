@@ -8,19 +8,16 @@
         $(document).ready(function () {
 
             $(window).on("load", function () {
-                alert("Page Loaded")
+                //alert("Page Loaded");
+                $('#page').css('display', 'block');
                 setTimeout(function () {
-                    $('.anime_ctd').animate({
-                        opacity: '0',
-                        height: "-=50%",
-                        width: "-=50%"
-                    }, 4500);
-                    $('.page').animate({
-                        opacity: '1'
-                    }, 2000);
+                    $('.anime_ctd').fadeOut(1000, function () {
+
+                    });
                 }, 5000);
             });
 
+            $('.parallax').parallax();
             $('.modal').modal({
                 dismissible: true, // Modal can be dismissed by clicking outside of the modal
                 opacity: .5, // Opacity of modal background
@@ -29,13 +26,11 @@
                 startingTop: '4%', // Starting top style attribute
                 endingTop: '10%', // Ending top style attribute   
             });
-
-
             //$('.anime_ctd').delay(6000).fadeOut(500);
             $('.button-collapse').sideNav({
                 closeOnClick: true
             });
-            $('.parallax').parallax();
+
             $('.scrollspy').scrollSpy({
                 scrollOffset: 0
             });
