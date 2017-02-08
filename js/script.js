@@ -7,6 +7,20 @@
 
         $(document).ready(function () {
 
+            $(window).on("load", function () {
+                alert("Page Loaded")
+                setTimeout(function () {
+                    $('.anime_ctd').animate({
+                        opacity: '0',
+                        height: "-=50%",
+                        width: "-=50%"
+                    }, 4500);
+                    $('.page').animate({
+                        opacity: '1'
+                    }, 2000);
+                }, 5000);
+            });
+
             $('.modal').modal({
                 dismissible: true, // Modal can be dismissed by clicking outside of the modal
                 opacity: .5, // Opacity of modal background
@@ -17,7 +31,7 @@
             });
 
 
-            $('.anime_ctd').delay(6000).fadeOut(500);
+            //$('.anime_ctd').delay(6000).fadeOut(500);
             $('.button-collapse').sideNav({
                 closeOnClick: true
             });

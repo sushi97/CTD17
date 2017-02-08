@@ -5,7 +5,7 @@
 }
 
 .parallax-container {
-    min-height: 450px;
+    min-height: 470px;
     height: auto;
 }
 
@@ -28,19 +28,21 @@ nav {
 }
 
 .page {
+    opacity: 0;
     animation-name: fadeIn1;
-    animation-duration: 7000ms;
-    animation-delay: 0ms;
+    /*animation-duration: 2000ms;
+    animation-delay: 5000ms;
+    animation-fill-mode: forwards;*/
 }
 
 .anime_ctd {
     width: 99%;
     position: fixed;
     z-index: 7;
-    padding-top: 200px;
-    animation-name: ZoomOut1;
+    padding-top: 150px;
+    /*animation-name: ZoomOut1;
     animation-delay: 5000ms;
-    animation-duration: 4500ms;
+    animation-duration: 4500ms;*/
 }
 
 .welcome1 {
@@ -94,7 +96,6 @@ nav {
     position: absolute;
     height: 20px;
     width: 20px;
-    /*background-color: rgba(255, 23, 68, 1);*/
     opacity: 0;
     border-radius: 50%;
     transition: all .7s ease-out;
@@ -184,13 +185,10 @@ nav {
 }
 
 @keyframes fadeIn1 {
-    0% {
+    frpm {
         opacity: 0;
     }
-    95% {
-        opacity: 0.01;
-    }
-    100% {
+    to {
         opacity: 1;
     }
 }
