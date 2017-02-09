@@ -6,22 +6,40 @@
     $(function () {
 
         $(document).ready(function () {
-
+            $('body').css('overflow', 'hidden');
+            setTimeout(function () {
+                $('.spinner').fadeIn(1000);
+            }, 3000);
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $('.spinner').fadeOut(1000, function () {
+                        $('.anime_ctd').animate({
+                            opacity: '0',
+                            width: '50%'
+                        }, 2000, function () {
+                            $('body').css('overflow', 'visible');
+                            this.remove();
+                        });
+                        $('#page').animate({
+                            opacity: '1'
+                        }, 2000);
+                    });
+                }, 5000);
+            });
+            $('.parallax').parallax();
             $('.modal').modal({
                 dismissible: true, // Modal can be dismissed by clicking outside of the modal
-                opacity: .5, // Opacity of modal background
+                opacity: 0.5, // Opacity of modal background
                 inDuration: 300, // Transition in duration
                 outDuration: 200, // Transition out duration
                 startingTop: '4%', // Starting top style attribute
-                endingTop: '10%', // Ending top style attribute   
+                endingTop: '10%' // Ending top style attribute   
             });
-
-
-            $('.anime_ctd').delay(6000).fadeOut(500);
+            //$('.anime_ctd').delay(6000).fadeOut(500);
             $('.button-collapse').sideNav({
                 closeOnClick: true
             });
-            $('.parallax').parallax();
+
             $('.scrollspy').scrollSpy({
                 scrollOffset: 0
             });
