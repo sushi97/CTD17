@@ -1,7 +1,7 @@
-a{
-    
+a {
     color: black;
 }
+
 #nav-but {
     z-index: 10;
     position: fixed;
@@ -24,11 +24,6 @@ a{
     text-align: center;
     height: 300px !important;
     width: 300px !important;
-}
-
-nav {
-    position: fixed;
-    z-index: 3;
 }
 
 #page {
