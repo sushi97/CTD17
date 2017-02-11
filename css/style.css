@@ -2,28 +2,19 @@ a {
     color: white;
 }
 
+p {
+    line-height: 2rem;
+}
+
 #nav-but {
     z-index: 10;
     position: fixed;
-    margin: 10px;
+    margin: 50px 0px 0px 10px;
 }
 
 .parallax-container {
     min-height: 470px;
     height: auto;
-}
-
-.carousel-item img {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 200px;
-    width: 200px !important;
-}
-
-.carousel-item {
-    text-align: center;
-    height: 300px !important;
-    width: 300px !important;
 }
 
 #page {
@@ -256,4 +247,36 @@ a {
 
 footer.page-footer {
     margin-top: 0px;
+}
+
+.dark-primary-color {
+    background: #00796B !important;
+}
+
+.default-primary-color {
+    background: #009688 !important;
+}
+
+.light-primary-color {
+    background: #B2DFDB !important;
+}
+
+.text-primary-color {
+    color: #FFFFFF !important;
+}
+
+.accent-color {
+    background: #00BCD4 !important;
+}
+
+.primary-text-color {
+    color: #212121 !important;
+}
+
+.secondary-text-color {
+    color: #757575 !important;
+}
+
+.divider-color {
+    border-color: #BDBDBD !important;
 }
