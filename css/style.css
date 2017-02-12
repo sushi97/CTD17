@@ -17,6 +17,11 @@ p {
     height: auto;
 }
 
+.parallax-container::before {
+    position: fixed;
+    content: '';
+}
+
 #page {
     opacity: 0;
 }
@@ -250,15 +255,15 @@ footer.page-footer {
 }
 
 .dark-primary-color {
-    background: #00796B !important;
+    background: #1976D2 !important;
 }
 
 .default-primary-color {
-    background: #009688 !important;
+    background: #2196F3 !important;
 }
 
 .light-primary-color {
-    background: #B2DFDB !important;
+    background: #BBDEFB !important;
 }
 
 .text-primary-color {
@@ -266,7 +271,7 @@ footer.page-footer {
 }
 
 .accent-color {
-    background: #00BCD4 !important;
+    background: #03A9F4 !important;
 }
 
 .primary-text-color {

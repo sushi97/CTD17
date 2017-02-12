@@ -42,13 +42,13 @@
             /*$('.scrollspy').scrollSpy({
                 scrollOffset: 0
             });*/
-            $('.carousel').carousel();
+            //$('.carousel').carousel();
             $('.slider').slider({
                 full_width: true
             });
             //$('.modal').modal();
 
-            var home = parseInt($('#home-range').position().top, 10),
+            /*var home = parseInt($('#home-range').position().top, 10),
                 events = parseInt($('#events-range').position().top, 10),
                 ping = parseInt($('#ping-range').position().top, 10),
                 sigs = parseInt($('#sigs-range').position().top, 10),
@@ -71,7 +71,7 @@
                 } else if (scroll > sigs) {
                     $('#nav-about').addClass('active');
                 }
-            });
+            });*/
 
             $('.box').hover(function () {
                 $(this).find('.wave-effect').addClass('ripple');
@@ -104,7 +104,7 @@
                 sectionName: "section-name",
                 interstitialSection: ".footer",
                 easing: "easeOutExpo",
-                scrollSpeed: 1100,
+                scrollSpeed: 1000,
                 offset: 0,
                 scrollbars: true,
                 standardScrollElements: ".card-content, .modal-content",
