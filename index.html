@@ -44,11 +44,11 @@
             <li>
                 <img src="images/credenz_50_2.jpg" width="100%">
             </li>
-            <li id="nav-home"><a class="waves-effect" href="#home"><i class="material-icons">store</i>Home</a></li>
-            <li id="nav-events"><a class="waves-effect" href="#events"><i class="material-icons">dashboard</i>Events</a></li>
-            <li id="nav-ping"><a class="waves-effect" href="#ping"><i class="material-icons">import_contacts</i>Ping</a></li>
-            <li id="nav-seminars"><a class="waves-effect" href="#sigs"><i class="material-icons">mic</i>Seminars</a></li>
-            <li id="nav-sigs"><a class="waves-effect" href="#sigs"><i class="material-icons">record_voice_over</i>SIGs</a></li>
+            <li id="nav-home"><a class="waves-effect"><i class="material-icons">store</i>Home</a></li>
+            <li id="nav-events"><a class="waves-effect"><i class="material-icons">dashboard</i>Events</a></li>
+            <li id="nav-ping"><a class="waves-effect"><i class="material-icons">import_contacts</i>Ping</a></li>
+            <li id="nav-seminars"><a class="waves-effect"><i class="material-icons">mic</i>Seminars</a></li>
+            <li id="nav-sigs"><a class="waves-effect"><i class="material-icons">record_voice_over</i>SIGs</a></li>
             <li>
                 <div class="divider"></div>
             </li>
@@ -58,7 +58,7 @@
 
         <a id="nav-but" href="#!" data-activates="slide-out" class="button-collapse show-on-large btn-floating btn-large waves-effect waves-light accent-color z-depth-2"><i class="material-icons">menu</i></a>
 
-        <div id="home" class="scrollspy">
+        <div id="home" class="scrollspy scrollify" data-section-name="home">
             <div class="parallax-container">
                 <div class="row">
                     <a href="http://www.ieee.org/index.html">
@@ -98,7 +98,7 @@
         </div>
 
 
-        <div id="events" class="scrollspy">
+        <div id="events" class="scrollspy scrollify" data-section-name="events">
             <div class="parallax-container valign-wrapper">
                 <div class="row valign">
                     <h2 class="white-text"><i class="material-icons medium" style="vertical-align: bottom">dashboard</i>EVENTS</h2>
@@ -341,7 +341,7 @@
             </div>
         </div>
 
-        <div id="ping" class="scrollspy">
+        <div id="ping" class="scrollspy scrollify" data-section-name="ping">
             <div class="parallax-container valign-wrapper">
                 <div class="row valign">
                     <h2 class="white-text"><i class="material-icons medium" style="vertical-align: bottom">import_contacts</i>P.I.N.G</h2>
@@ -373,7 +373,7 @@
         </div>
 
 
-        <div id="sigs" class="scrollspy page">
+        <div id="sigs" class="scrollspy scrollify" data-section-name="sigs">
             <div class="parallax-container valign-wrapper">
                 <div class="row valign">
                     <h2 class="white-text center-align">SIGS & SEMINARS</h2>
@@ -507,9 +507,6 @@
                                 </div>
                             </div>
 
-
-
-
                         </div>
 
                         <div class="card-tabs">
@@ -524,7 +521,7 @@
                 </div>
             </div>
         </div>
-        <footer id="about" class="page-footer scrollspy default-primary-color">
+        <footer id="about" class="footer page-footer scrollspy default-primary-color scrollify" data-section-name="about">
             <div id="about-range" class="container white-text">
                 <div class="row">
                     <div class="col s12 m6 l8">

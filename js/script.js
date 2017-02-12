@@ -35,14 +35,13 @@
                 startingTop: '4%', // Starting top style attribute
                 endingTop: '10%' // Ending top style attribute   
             });
-            //$('.anime_ctd').delay(6000).fadeOut(500);
             $('.button-collapse').sideNav({
                 closeOnClick: true
             });
 
-            $('.scrollspy').scrollSpy({
+            /*$('.scrollspy').scrollSpy({
                 scrollOffset: 0
-            });
+            });*/
             $('.carousel').carousel();
             $('.slider').slider({
                 full_width: true
@@ -99,6 +98,42 @@
                     width: '150px'
                 }, 700);
             });
+
+            $.scrollify({
+                section: ".scrollify",
+                sectionName: "section-name",
+                interstitialSection: ".footer",
+                easing: "easeOutExpo",
+                scrollSpeed: 1100,
+                offset: 0,
+                scrollbars: true,
+                standardScrollElements: ".card-content, .modal-content",
+                setHeights: false,
+                overflowScroll: true,
+                updateHash: true,
+                touchScroll: true,
+                before: function () {},
+                after: function () {},
+                afterResize: function () {},
+                afterRender: function () {}
+            });
+
+            $('#nav-home').on("click", function () {
+                $.scrollify.move("#home");
+            });
+            $('#nav-events').on("click", function () {
+                $.scrollify.move("#events");
+            });
+            $('#nav-ping').on("click", function () {
+                $.scrollify.move("#ping");
+            });
+            $('#nav-sigs').on("click", function () {
+                $.scrollify.move("#sigs");
+            });
+            $('#nav-about').on("click", function () {
+                $.scrollify.move("#about");
+            });
+
         });
     }); // end of document ready
 }(jQuery)); // end of jQuery name space
