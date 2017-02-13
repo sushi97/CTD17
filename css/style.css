@@ -102,9 +102,9 @@ p {
     width: 100%;
     position: fixed;
     z-index: 7;
-    /*padding-top: 150px;*/
     top: 40%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
@@ -116,24 +116,33 @@ p {
 
 .c {
     position: absolute;
-    width=40%;
+    width: 40%;
+    -webkit-animation-name: fadeInRight1;
     animation-name: fadeInRight1;
+    -webkit-animation-duration: 2000ms;
     animation-duration: 2000ms;
+    -webkit-animation-delay: 0ms;
     animation-delay: 0ms;
 }
 
 .t {
     position: absolute;
-    width=40%;
+    width: 40%;
+    -webkit-animation-name: fadeInDown1;
     animation-name: fadeInDown1;
+    -webkit-animation-duration: 2000ms;
     animation-duration: 2000ms;
+    -webkit-animation-delay: 0ms;
     animation-delay: 0ms;
 }
 
 .d {
-    width=40%;
+    width: 40%;
+    -webkit-animation-name: fadeInLeft1;
     animation-name: fadeInLeft1;
+    -webkit-animation-duration: 2000ms;
     animation-duration: 2000ms;
+    -webkit-animation-delay: 0ms;
     animation-delay: 0ms;
 }
 
@@ -141,8 +150,11 @@ p {
     width: 38%;
     margin-top: 10px;
     margin-left: 31%;
+    -webkit-animation-name: fadeInUp1;
     animation-name: fadeInUp1;
+    -webkit-animation-duration: 6000ms;
     animation-duration: 6000ms;
+    -webkit-animation-delay: 0ms;
     animation-delay: 0ms;
 }
 
@@ -150,8 +162,11 @@ p {
     width: 34%;
     margin-top: 10px;
     margin-left: 33%;
+    -webkit-animation-name: fadeInUp1;
     animation-name: fadeInUp1;
+    -webkit-animation-duration: 6000ms;
     animation-duration: 6000ms;
+    -webkit-animation-delay: 0ms;
     animation-delay: 0ms;
 }
 
@@ -160,6 +175,8 @@ p {
     position: fixed;
     top: 85%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: 100px auto;
     width: 50px;
@@ -228,16 +245,22 @@ p {
     width: 20px;
     opacity: 0;
     border-radius: 50%;
+    -webkit-transition: all .7s ease-out;
     transition: all .7s ease-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
     top: 50%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
 
 .ripple {
     opacity: 1;
+    -ms-transform: scale(30);
     transform: scale(30);
     -webkit-transform: scale(30);
 }
@@ -255,6 +278,7 @@ p {
     width: 150px;
     top: 50%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
@@ -277,6 +301,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -289,6 +314,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -301,6 +327,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -313,6 +340,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -325,6 +353,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -337,6 +366,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -349,6 +379,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -361,6 +392,7 @@ p {
     }
     to {
         opacity: 1;
+        -webkit-transform: none;
         transform: none;
     }
 }

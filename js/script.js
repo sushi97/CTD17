@@ -17,7 +17,7 @@
                             opacity: '0',
                             width: '50%'
                         }, 2000, function () {
-                            $('body').css('overflow', 'initial');
+                            $('body').css('overflow', 'auto');
                             this.remove();
                         });
                         $('#page').animate({
