@@ -39,16 +39,16 @@
                 closeOnClick: true
             });
 
-            /*$('.scrollspy').scrollSpy({
+            $('.scrollspy').scrollSpy({
                 scrollOffset: 0
-            });*/
+            });
             //$('.carousel').carousel();
             $('.slider').slider({
                 full_width: true
             });
             //$('.modal').modal();
 
-            /*var home = parseInt($('#home-range').position().top, 10),
+            var home = parseInt($('#home-range').position().top, 10),
                 events = parseInt($('#events-range').position().top, 10),
                 ping = parseInt($('#ping-range').position().top, 10),
                 sigs = parseInt($('#sigs-range').position().top, 10),
@@ -71,8 +71,7 @@
                 } else if (scroll > sigs) {
                     $('#nav-about').addClass('active');
                 }
-            });*/
-
+            });
             $('.box').hover(function () {
                 $(this).find('.wave-effect').addClass('ripple');
                 $(this).find('.black-img').animate({
@@ -98,13 +97,12 @@
                     width: '150px'
                 }, 700);
             });
-
-            $.scrollify({
+            /*$.scrollify({
                 section: ".scrollify",
                 sectionName: "section-name",
                 interstitialSection: ".footer",
                 easing: "easeOutExpo",
-                scrollSpeed: 1000,
+                scrollSpeed: 1100,
                 offset: 0,
                 scrollbars: true,
                 standardScrollElements: ".card-content, .modal-content",
@@ -113,7 +111,14 @@
                 updateHash: true,
                 touchScroll: true,
                 before: function () {},
-                after: function () {},
+                after: function (i, panels) {
+                    var ref = panels[i].attr("data-section-name");
+                    if (ref === "home") {
+                        $('#nav-but').fadeOut(300);
+                    } else {
+                        $('#nav-but').fadeIn(300);
+                    }
+                },
                 afterResize: function () {},
                 afterRender: function () {}
             });
@@ -130,9 +135,12 @@
             $('#nav-sigs').on("click", function () {
                 $.scrollify.move("#sigs");
             });
+            $('#nav-seminars').on("click", function () {
+                $.scrollify.move("#sigs");
+            });
             $('#nav-about').on("click", function () {
                 $.scrollify.move("#about");
-            });
+            });*/
 
         });
     }); // end of document ready
