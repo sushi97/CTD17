@@ -35,6 +35,7 @@ p {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .welcome1 {
@@ -161,11 +162,13 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .ripple {
     opacity: 1;
     transform: scale(30);
+    -webkit-transform: scale(30);
 }
 
 .box {
@@ -182,6 +185,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .box .black-img {
@@ -206,7 +210,31 @@ p {
     }
 }
 
+@-webkit-keyframes fadeInDown1 {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 @keyframes fadeInLeft1 {
+    from {
+        opacity: 0;
+        transform: translate3d(48%, 0, 0);
+        -webkit-transform: translate3d(48%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeInLeft1 {
     from {
         opacity: 0;
         transform: translate3d(48%, 0, 0);
@@ -230,6 +258,18 @@ p {
     }
 }
 
+@-webkit-keyframes fadeInRight1 {
+    from {
+        opacity: 0;
+        transform: translate3d(-48%, 0, 0);
+        -webkit-transform: translate3d(-48%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 @keyframes fadeInUp1 {
     from {
         opacity: 0;
@@ -242,7 +282,28 @@ p {
     }
 }
 
+@-webkit-keyframes fadeInUp1 {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 @keyframes fadeIn1 {
+    frpm {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn1 {
     frpm {
         opacity: 0;
     }
