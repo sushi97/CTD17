@@ -1,3 +1,18 @@
+* {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?oka0io');
@@ -115,59 +130,76 @@ p {
 }
 
 .c {
+    opacity: 0;
     position: absolute;
     width: 40%;
     -webkit-animation-name: fadeInRight1;
     animation-name: fadeInRight1;
     -webkit-animation-duration: 2000ms;
     animation-duration: 2000ms;
-    -webkit-animation-delay: 0ms;
-    animation-delay: 0ms;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .t {
+    opacity: 0;
     position: absolute;
     width: 40%;
     -webkit-animation-name: fadeInDown1;
     animation-name: fadeInDown1;
     -webkit-animation-duration: 2000ms;
     animation-duration: 2000ms;
-    -webkit-animation-delay: 0ms;
-    animation-delay: 0ms;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .d {
+    opacity: 0;
     width: 40%;
     -webkit-animation-name: fadeInLeft1;
     animation-name: fadeInLeft1;
     -webkit-animation-duration: 2000ms;
     animation-duration: 2000ms;
-    -webkit-animation-delay: 0ms;
-    animation-delay: 0ms;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .welcome2 {
+    opacity: 0;
     width: 38%;
     margin-top: 10px;
     margin-left: 31%;
     -webkit-animation-name: fadeInUp1;
     animation-name: fadeInUp1;
-    -webkit-animation-duration: 6000ms;
-    animation-duration: 6000ms;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
     -webkit-animation-delay: 0ms;
-    animation-delay: 0ms;
+    animation-delay: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .welcome3 {
+    opacity: 0;
     width: 34%;
     margin-top: 10px;
     margin-left: 33%;
     -webkit-animation-name: fadeInUp1;
     animation-name: fadeInUp1;
-    -webkit-animation-duration: 6000ms;
-    animation-duration: 6000ms;
-    -webkit-animation-delay: 0ms;
-    animation-delay: 0ms;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .spinner {
@@ -244,6 +276,7 @@ p {
     height: 20px;
     width: 20px;
     opacity: 0;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: all .7s ease-out;
     transition: all .7s ease-out;
@@ -417,36 +450,4 @@ p {
 
 footer.page-footer {
     margin-top: 0px;
-}
-
-.dark-primary-color {
-    background: #1976D2 !important;
-}
-
-.default-primary-color {
-    background: #2196F3 !important;
-}
-
-.light-primary-color {
-    background: #BBDEFB !important;
-}
-
-.text-primary-color {
-    color: #FFFFFF !important;
-}
-
-.accent-color {
-    background: #03A9F4 !important;
-}
-
-.primary-text-color {
-    color: #212121 !important;
-}
-
-.secondary-text-color {
-    color: #757575 !important;
-}
-
-.divider-color {
-    border-color: #BDBDBD !important;
 }
