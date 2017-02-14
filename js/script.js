@@ -61,19 +61,24 @@
                 $('#nav-about').removeClass('active');
                 if (scroll < home) {
                     $('#nav-home').addClass('active');
-                    $('#nav-but').fadeOut(300);
+                    $('#nav-but').removeClass('animated fadeInLeft');
+                    $('#nav-but').addClass('animated fadeOutLeft');
                 } else if (scroll > home && scroll < events) {
                     $('#nav-events').addClass('active');
-                    $('#nav-but').fadeIn(300);
+                    $('#nav-but').removeClass('animated fadeOutLeft');
+                    $('#nav-but').addClass('animated fadeInLeft');
                 } else if (scroll > events && scroll < ping) {
                     $('#nav-ping').addClass('active');
-                    $('#nav-but').fadeIn(300);
+                    $('#nav-but').removeClass('animated fadeOutLeft');
+                    $('#nav-but').addClass('animated fadeInLeft');
                 } else if (scroll > ping && scroll < sigs) {
                     $('#nav-sigs').addClass('active');
-                    $('#nav-but').fadeIn(300);
+                    $('#nav-but').removeClass('animated fadeOutLeft');
+                    $('#nav-but').addClass('animated fadeInLeft');
                 } else if (scroll > sigs) {
                     $('#nav-about').addClass('active');
-                    $('#nav-but').fadeIn(300);
+                    $('#nav-but').removeClass('animated fadeOutLeft');
+                    $('#nav-but').addClass('animated fadeInLeft');
                 }
             });
             $('.box').hover(function () {
