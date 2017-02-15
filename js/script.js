@@ -6,10 +6,14 @@
     $(function () {
 
         $(document).ready(function () {
+            $('.c').addClass('fadeInRight1');
+            $('.t').addClass('fadeInDown1');
+            $('.d').addClass('fadeInLeft1');
+            $('.welcome2, .welcome3').addClass('fadeInUp1');
+            $('.spinner').animate({
+                top: '72%'
+            }, 1000, "easeOutCubic");
             $('body').css('overflow', 'hidden');
-            setTimeout(function () {
-                $('.spinner').fadeIn(1000);
-            }, 3000);
             $(window).on("load", function () {
                 setTimeout(function () {
                     $('.spinner').fadeOut(1000, function () {
