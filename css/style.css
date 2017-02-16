@@ -104,11 +104,6 @@ p {
     height: auto;
 }
 
-.parallax-container::before {
-    position: fixed;
-    content: '';
-}
-
 #page {
     opacity: 0;
 }

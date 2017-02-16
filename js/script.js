@@ -55,34 +55,37 @@
                 events = parseInt($('#events-range').position().top, 10),
                 ping = parseInt($('#ping-range').position().top, 10),
                 sigs = parseInt($('#sigs-range').position().top, 10),
-                about = parseInt($('#about-range').position().top, 10);
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                $('#nav-home').removeClass('active');
-                $('#nav-events').removeClass('active');
-                $('#nav-ping').removeClass('active');
-                $('#nav-sigs').removeClass('active');
-                $('#nav-about').removeClass('active');
+                about = parseInt($('#about-range').position().top, 10),
+                lastsec = "home";
+            $(window).on("scroll", function () {
+                var scroll = $(window).scrollTop(),
+                    currsection = "";
                 if (scroll < home) {
-                    $('#nav-home').addClass('active');
-                    $('#nav-but').removeClass('animated fadeInLeft');
-                    $('#nav-but').addClass('animated fadeOutLeft');
+                    currsection = "home";
+
                 } else if (scroll > home && scroll < events) {
-                    $('#nav-events').addClass('active');
-                    $('#nav-but').removeClass('animated fadeOutLeft');
-                    $('#nav-but').addClass('animated fadeInLeft');
+                    currsection = "events";
+
                 } else if (scroll > events && scroll < ping) {
-                    $('#nav-ping').addClass('active');
-                    $('#nav-but').removeClass('animated fadeOutLeft');
-                    $('#nav-but').addClass('animated fadeInLeft');
+                    currsection = "ping";
+
                 } else if (scroll > ping && scroll < sigs) {
-                    $('#nav-sigs').addClass('active');
-                    $('#nav-but').removeClass('animated fadeOutLeft');
-                    $('#nav-but').addClass('animated fadeInLeft');
+                    currsection = "sigs";
+
                 } else if (scroll > sigs) {
-                    $('#nav-about').addClass('active');
-                    $('#nav-but').removeClass('animated fadeOutLeft');
-                    $('#nav-but').addClass('animated fadeInLeft');
+                    currsection = "about";
+                }
+                if (lastsec !== currsection) {
+                    $('#nav-' + lastsec).removeClass('active');
+                    $('#nav-' + currsection).addClass('active');
+                    if (currsection === "home") {
+                        $('#nav-but').removeClass('animated fadeInLeft');
+                        $('#nav-but').addClass('animated fadeOutLeft');
+                    } else {
+                        $('#nav-but').removeClass('animated fadeOutLeft');
+                        $('#nav-but').addClass('animated fadeInLeft');
+                    }
+                    lastsec = currsection;
                 }
             });
             $('.box').hover(function () {
