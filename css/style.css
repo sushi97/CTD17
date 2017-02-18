@@ -452,6 +452,19 @@ footer.page-footer {
     #events-sec .modal {
         width: 95% !important;
         max-height: 90% !important;
+        top: 5% !important;    
+    }
+    
+    #ieee  {
+        width: 95% !important;
+        max-height: 90% !important;
+        top: 5% !important;
+}
+    
+    #pisb  
+    {
+        width: 95% !important;
+        max-height: 90% !important;
         top: 5% !important;
     }
 }
