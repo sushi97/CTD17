@@ -468,3 +468,11 @@ footer.page-footer {
         top: 5% !important;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    #sigs-range .card-panel
+    {
+        height: 25%;
+        width: 25%;
+    }
+}
