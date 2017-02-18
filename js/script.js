@@ -170,6 +170,43 @@
                             }
                         ];
             Materialize.scrollFire(options);
+
+            $('#sigs-sec .tab').click(function () {
+
+                var that,
+                    sec = $(this).find('a').attr('href');
+                console.log(sec);
+                switch (sec) {
+                case '#sig':
+                    that = '0';
+                    break;
+                case '#sig1':
+                    that = '0';
+                    break;
+                case '#sig2':
+                    that = '0';
+                    break;
+                case '#sig3':
+                    that = '50';
+                    break;
+                case '#seminar1':
+                    that = '150';
+                    break;
+                case '#seminar2':
+                    that = '250';
+                    break;
+                case '#seminar3':
+                    that = '350';
+                    break;
+                case '#seminar4':
+                    that = '400';
+                    break;
+                }
+
+                $('#sigs-sec .tabs').animate({
+                    scrollLeft: that
+                }, 300);
+            });
         });
     }); // end of document ready
 }(jQuery)); // end of jQuery name space

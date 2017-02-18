@@ -452,17 +452,14 @@ footer.page-footer {
     #events-sec .modal {
         width: 95% !important;
         max-height: 90% !important;
-        top: 5% !important;    
+        top: 5% !important;
     }
-    
-    #ieee  {
+    #ieee {
         width: 95% !important;
         max-height: 90% !important;
         top: 5% !important;
-}
-    
-    #pisb  
-    {
+    }
+    #pisb {
         width: 95% !important;
         max-height: 90% !important;
         top: 5% !important;
@@ -470,9 +467,13 @@ footer.page-footer {
 }
 
 @media only screen and (min-width: 1440px) {
-    #sigs-range .card-panel
-    {
+    #sigs-range .card-panel {
         height: 25%;
         width: 25%;
+    }
+    #home {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
     }
 }
