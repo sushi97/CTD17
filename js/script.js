@@ -201,6 +201,9 @@
                 case '#seminar4':
                     that = '400';
                     break;
+                case '#seminar5':
+                    that = '500'
+                    break;
                 }
 
                 $('#sigs-sec .tabs').animate({
